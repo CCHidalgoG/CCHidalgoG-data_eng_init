@@ -1,0 +1,8 @@
+import requests
+
+def test_api_pokemon():
+    url = 'https://pokeapi.co/api/v2/pokemon/1'
+    response = requests.get(url)
+    assert response.status_code == 200
+
+    
